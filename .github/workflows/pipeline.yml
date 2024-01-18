@@ -1,4 +1,4 @@
-name: Hello World!
+name: Pipeline
 
 on:
   push:
@@ -9,6 +9,8 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Install
         run: |
           npm install
