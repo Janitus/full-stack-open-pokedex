@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  hello_world_job:
+  pipeline-job:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
