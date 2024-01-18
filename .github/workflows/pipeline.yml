@@ -12,8 +12,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install
-        run: |
-          npm install
+        run: npm install
       - name: Eslint
-        run: |
-          npm run eslint
+        run: npm run eslint
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm test
