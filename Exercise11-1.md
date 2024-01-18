@@ -1,0 +1,7 @@
+Some of the tools I have seen in use for CI/CD in regards to a python project were pytest (for testing), pylint (for code quality/standards) and poetry (for managing builds and tests.) Some people also use pip, which is a package manager similar to poetry.
+
+For instance, one common way is setting up a github workflow and including them over there, e.g. running pylint automatically for all code in the codebase and returning a score as well as list of all issues (trailing whitespace, etc).
+
+Alternatives are numerous, one of the more known ones being AWS and JetBrains TeamCity. Truthfully though, I can't really compare what the differences are without "parroting" word-to-word.
+
+Regardless, answering the question about self-hosted vs cloud-based environment entirely differs from usecase to another. For instance, would it be sensible to develop some kind of a highly classified software using a cloud-based environment like github? Answer would probably be no. Likewise, if you're developing a simple open source project like reactflow for creating cool node based graphics, then absolutely. In fact the latter would only benefit from it, since doing it on cloud would allow people to easily use common services and make it even more accessible, and open source projects in general benefit from "the more the merrier." So in short, the answer depends on your own needs, whether cybersecurity, availability or some other reasons.
